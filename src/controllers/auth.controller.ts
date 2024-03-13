@@ -1,10 +1,10 @@
 import { Request, Response } from "express";
-import User from "../models/user.model.ts";
-import getUserData from "../utils/getUser.util.ts";
-import verifyPassword from "../utils/verifyPassword.util.ts";
-import genarateToken from "../utils/generateToken.util.ts";
-import destroyToken from "../utils/destroyToken.util.ts";
-import { STATUS_TYPE } from "../models/task.model.ts";
+import User from "../models/user.model";
+import getUserData from "../utils/getUser.util";
+import verifyPassword from "../utils/verifyPassword.util";
+import genarateToken from "../utils/generateToken.util";
+import destroyToken from "../utils/destroyToken.util";
+import { STATUS_TYPE } from "../models/task.model";
 
 type TASK_TYPE = {
   name: string;

@@ -6,9 +6,9 @@ import morgan from "morgan";
 import cors from "cors";
 
 // files
-import router from "./routers/index.ts";
-import connectDB from "./db/dbConfig.ts";
-import { corsOptions } from "./configs/cors.config.ts";
+import router from "./routers/index";
+import connectDB from "./db/dbConfig";
+import { corsOptions } from "./configs/cors.config";
 
 const app = express();
 const PORT: string = process.env.PORT || "8000";
